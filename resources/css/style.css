@@ -29,7 +29,7 @@ a {
 }
 
 .row {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ h3 {
 /* ------------ PARAGRAPHS ----------- */
 
 p {
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 .text {
@@ -220,7 +220,7 @@ header {
 .meals {
   width: 100%;
   height: auto;
-  padding-top: 0;
+  padding: 0;
 }
 
 .list-meals {
@@ -248,4 +248,67 @@ header {
 .meal-photo:hover {
   transform: scale(1.03);
   opacity: 1;
+}
+
+/* ---------- HOW IT WORKS ----------- */
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
+.steps-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.steps-content {
+  flex-basis: 50%;
+}
+
+.steps-content:first-child {
+  text-align: right;
+  padding-right: 45px;
+}
+
+.steps-content:last-child {
+  padding-left: 45px;
+  margin-top: 30px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.steps-text {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.steps-num {
+  color: var(--carrot);
+  font-size: 1.5rem;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid var(--carrot);
+  padding-top: 7px;
+}
+
+.steps-text p {
+  flex-basis: 85%;
+}
+
+.steps-link {
+  margin-right: 15px;
+}
+
+.steps-img {
+  height: 50px;
+  width: auto;
 }
