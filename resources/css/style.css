@@ -264,22 +264,20 @@ header {
   margin-top: 15px;
 }
 
-.steps-content {
-  flex-basis: 50%;
-}
-
 .steps-content:first-child {
   text-align: right;
   padding-right: 45px;
+  flex-basis: 25%;
 }
 
 .steps-content:last-child {
   padding-left: 45px;
-  margin-top: 30px;
+  margin-top: 20px;
+  flex-basis: 50%;
 }
 
 .app-screen {
-  width: 40%;
+  width: 85%;
 }
 
 .steps-text {
