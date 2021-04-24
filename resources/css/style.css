@@ -22,11 +22,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/* ------ REUSABLE COMPONENTS ----- */
-
 a {
   text-decoration: none;
 }
+
+/* ------ REUSABLE COMPONENTS ----- */
 
 .row {
   max-width: 1140px;
@@ -42,6 +42,7 @@ section {
 h2,
 h3 {
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 h1,
@@ -63,6 +64,7 @@ h2 {
   font-size: 1.8rem;
   word-spacing: 2px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 h2::after {
@@ -82,17 +84,21 @@ h3 {
 /* ------------ PARAGRAPHS ----------- */
 
 p {
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .text {
   width: 70%;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
 .features-content p {
   font-size: 0.9rem;
   text-align: justify;
+}
+
+.steps-text p {
+  line-height: normal;
 }
 
 /* ------------- ICONs ------------ */
@@ -105,7 +111,15 @@ p {
   display: block;
 }
 
-/* ------------ BUTTONS ----------- */
+.icon-small {
+  color: var(--carrot);
+  height: 25px;
+  display: block;
+  flex-basis: 10%;
+  margin-right: 18px;
+}
+
+/* ------------ LINKS ----------- */
 
 .btn {
   display: inline-block;
@@ -146,6 +160,7 @@ header {
     url(img/hero.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
 }
@@ -193,13 +208,6 @@ header {
 }
 
 /* ---------- FEATURES ----------- */
-
-.features-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .features-box {
   display: flex;
@@ -253,8 +261,6 @@ header {
 /* ---------- HOW IT WORKS ----------- */
 
 .steps {
-  display: flex;
-  flex-direction: column;
   background-color: #f4f4f4;
 }
 
@@ -283,7 +289,6 @@ header {
 .steps-text {
   margin-bottom: 50px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -309,4 +314,53 @@ header {
 .steps-img {
   height: 50px;
   width: auto;
+}
+
+/* ---------- CITIES ----------- */
+
+.cities-content {
+  display: flex;
+}
+
+.city {
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.city-img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.city-link {
+  color: var(--carrot);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.city-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--carrot);
+}
+
+.city-link:hover {
+  color: var(--dark);
+}
+
+.city-link:hover::after {
+  background-color: transparent;
 }
