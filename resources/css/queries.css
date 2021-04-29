@@ -1,0 +1,252 @@
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 20px;
+  }
+
+  .banner {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .city {
+    padding: 15px;
+  }
+
+  .plans-item {
+    flex-basis: 29%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .features-box h3 {
+    height: 44.8px;
+  }
+
+  .text {
+    width: 80%;
+  }
+
+  .steps-content:first-child {
+    padding-right: 0;
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .steps-content:last-child {
+    padding-left: 0;
+    flex-basis: 50%;
+  }
+
+  .app-screen {
+    width: 60%;
+  }
+
+  .steps-num {
+    margin-right: 25px;
+  }
+
+  .city {
+    padding: 10px;
+  }
+
+  .icon-small {
+    margin-right: 10px;
+    flex-basis: 8%;
+  }
+
+  .city-feature {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    margin-left: 0;
+  }
+
+  .plans-item {
+    flex-basis: 32.5%;
+  }
+
+  .plans-item ~ .plans-item {
+    margin-left: 9px;
+  }
+
+  .plans-item div {
+    padding: 11px;
+  }
+
+  .plans-item ul li {
+    font-size: 0.9rem;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+
+  section {
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-box h3 {
+    height: auto;
+  }
+
+  .meals {
+    margin-bottom: 0;
+  }
+
+  .steps {
+    margin-top: 0;
+    padding: 30px 0;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .features-box,
+  .city,
+  .testimonial,
+  .plans-item,
+  .steps-content:first-child,
+  .steps-content:last-child {
+    flex-basis: 100%;
+  }
+
+  .steps-content:first-child {
+    margin-bottom: 25px;
+  }
+
+  .steps-text {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .steps-content div:last-child {
+    text-align: center;
+  }
+
+  .steps-num {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding-top: 2px;
+    margin-right: 15px;
+  }
+
+  .app-screen {
+    width: 40%;
+    border-radius: 21px;
+  }
+
+  .icon-small {
+    flex-basis: 5%;
+    margin-right: 2px;
+  }
+
+  .testimonials {
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+
+  .testimonial,
+  .city,
+  .plans-item {
+    margin-bottom: 30px;
+  }
+
+  .plans {
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .plans-item div {
+    padding: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .form-item {
+    margin-bottom: 10px;
+  }
+
+  .form-item div {
+    flex-basis: 100%;
+  }
+
+  .form-item div:first-child {
+    margin-bottom: 10px;
+    flex-basis: 100%;
+  }
+
+  .form-item:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+  .steps-icon {
+    text-align: center;
+  }
+
+  .nav-band {
+    display: none;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  .footer-nav ul {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .footer-nav ul:first-child {
+    margin-bottom: 10px;
+  }
+
+  footer p {
+    margin-top: 3px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner .btn-full {
+    margin-bottom: 20px;
+  }
+
+  .meal-item {
+    flex-basis: 50%;
+  }
+
+  .footer-nav ul:first-child {
+    margin-bottom: 0;
+  }
+
+  .footer-nav ul:first-child .footer-item {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
