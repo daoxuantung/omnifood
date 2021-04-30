@@ -14,34 +14,55 @@
   </head>
   <body>
     <header>
-      <nav class="row nav">
-        <img
-          class="logo"
-          src="/resources/img/logo-white.png"
-          alt="Omnifood Logo"
-        />
-        <ul class="nav-band">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Food delivery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">How it works </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our cities </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign up </a>
-          </li>
-        </ul>
+      <nav id="sticky" class="navbar">
+        <div class="row nav">
+          <img
+            class="logo"
+            src="/resources/img/logo-white.png"
+            alt="Omnifood Logo"
+          />
+          <img
+            class="logo-black"
+            src="/resources/img/logo.png"
+            alt="Omnifood Logo"
+          />
+          <ul class="nav-band" id="nav-band">
+            <li class="nav-item">
+              <a class="nav-link" href="#feature">Food delivery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">How it works </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#city">Our cities </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#plan">Sign up </a>
+            </li>
+          </ul>
+          <ion-icon
+            class="icon-menu"
+            id="toggle"
+            name="menu-outline"
+          ></ion-icon>
+          <ion-icon
+            id="toggle-close"
+            class="icon-close"
+            name="close-outline"
+          ></ion-icon>
+        </div>
       </nav>
-      <div class="banner">
-        <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+      <div id="banner" class="banner">
+        <h1 id="banner-title">
+          Goodbye junk food.<br />Hello super healthy meals.
+        </h1>
+        <div class="banner-btn" id="banner-btn">
+          <a class="btn btn-full" id="btn-full" href="#plan">I’m hungry</a>
+          <a class="btn btn-ghost" href="#feature">Show me more</a>
+        </div>
       </div>
     </header>
-    <section class="features">
+    <section class="features" id="feature">
       <div class="row features-header">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="text">
@@ -50,7 +71,7 @@
           we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row features-content">
+      <div class="row features-content" id="features-content">
         <div class="features-box">
           <ion-icon class="icon" name="infinite-outline"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -149,20 +170,20 @@
         </li>
       </ul>
     </section>
-    <section class="steps">
+    <section class="steps" id="work">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
       <div class="row">
         <div class="steps-box">
-          <div class="steps-content">
+          <div class="steps-content" id="phone-image">
             <img
               class="app-screen"
               src="/resources/img/app-iPhone.png"
               alt="Omnifood app on iPhone"
             />
           </div>
-          <div class="steps-content">
+          <div class="steps-content" id="phone-caption">
             <div class="steps-text">
               <div class="steps-num">1</div>
               <p>
@@ -204,12 +225,12 @@
         </div>
       </div>
     </section>
-    <section class="cities">
+    <section class="cities" id="city">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row cities-content">
-        <div class="cities-content">
+      <div class="row">
+        <div class="cities-content" id="cities-content">
           <div class="city">
             <img
               class="city-img"
@@ -327,7 +348,7 @@
         </div>
       </div>
     </section>
-    <section class="plans">
+    <section class="plans" id="plan">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
@@ -508,12 +529,9 @@
           </div>
           <div class="form-item">
             <div>
-              <label for="news">Newsletter</label>
+              <label>Newsletter</label>
             </div>
-            <div>
-              <input type="checkbox" name="news" id="news" checked /> Yes,
-              please
-            </div>
+            <div><input type="checkbox" name="news" checked /> Yes, please</div>
           </div>
           <div class="form-item">
             <div>
@@ -581,5 +599,6 @@
         </div>
       </div>
     </footer>
+    <script src="/resources/js/script.js"></script>
   </body>
 </html>
