@@ -141,26 +141,40 @@
   .testimonial {
     margin-bottom: 30px;
   }
+  .nav-link:hover,
+  .nav-link:active {
+    border-color: transparent;
+  }
   .plans {
     margin: 0;
     padding: 30px 0;
   }
+
+  .plans-item ~ .plans-item {
+    margin-left: 0;
+  }
+
   .plans-item div {
     padding: 20px;
   }
+
   form {
     width: 90%;
   }
+
   .form-item {
     margin-bottom: 10px;
   }
+
   .form-item div {
     flex-basis: 100%;
   }
+
   .form-item div:first-child {
     margin-bottom: 10px;
     flex-basis: 100%;
   }
+
   .form-item:nth-child(4) {
     margin-bottom: 10px;
   }
@@ -201,6 +215,7 @@
     margin-top: 3px;
   }
 }
+
 @media only screen and (max-width: 480px) {
   .banner .btn-full {
     margin-bottom: 20px;
